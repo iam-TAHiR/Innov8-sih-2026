@@ -214,111 +214,241 @@ def get_whatsapp_status() -> dict[str, object]:
 
 @app.post("/workers/intake")
 def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
-    """Save a self-declaration and return preliminary module suggestions."""
-    with WORKER_INTAKES_LOCK:
-        if WORKER_INTAKES_PATH.exists():
-            with WORKER_INTAKES_PATH.open(encoding="utf-8") as intake_file:
-                intakes = json.load(intake_file)
-        else:
-            intakes = []
-        existing = next((item for item in intakes if item["intake_id"] == request.intake_id), None)
-        if existing:
-            return existing["response"]
+    """Save a worker self-declaration to Supabase and return preliminary matches."""
 
-        evidence_name = None
-        evidence_data_url = request.evidence_media_data_url or request.evidence_photo_data_url
-        if evidence_data_url:
-            header, separator, encoded = evidence_data_url.partition(",")
-            supported_headers = {
-                "data:image/jpeg;base64": ".jpg",
-                "data:image/png;base64": ".png",
-                "data:image/webp;base64": ".webp",
-                "data:video/mp4;base64": ".mp4",
-                "data:video/webm;base64": ".webm",
-                "data:video/quicktime;base64": ".mov",
-            }
-            if not separator or header not in supported_headers:
-                raise HTTPException(status_code=400, detail="Evidence must be a JPEG, PNG, WebP, MP4, WebM, or MOV data URL.")
-            maximum_encoded_size = 11_200_000 if header.startswith("data:video/") else 5_600_000
-            if len(encoded) > maximum_encoded_size:
-                raise HTTPException(status_code=413, detail="Photos must be smaller than 4 MB and videos smaller than 8 MB.")
-            try:
-                evidence_bytes = base64.b64decode(encoded, validate=True)
-            except (binascii.Error, ValueError) as error:
-                raise HTTPException(status_code=400, detail="Evidence data is invalid.") from error
-            extension = supported_headers[header]
-            valid_signatures = {
-                ".jpg": evidence_bytes.startswith(b"\xff\xd8\xff"),
-                ".png": evidence_bytes.startswith(b"\x89PNG\r\n\x1a\n"),
-                ".webp": evidence_bytes.startswith(b"RIFF") and evidence_bytes[8:12] == b"WEBP",
-                ".mp4": len(evidence_bytes) > 12 and evidence_bytes[4:8] == b"ftyp",
-                ".mov": len(evidence_bytes) > 12 and evidence_bytes[4:8] == b"ftyp",
-                ".webm": evidence_bytes.startswith(b"\x1a\x45\xdf\xa3"),
-            }
-            if not valid_signatures[extension]:
-                raise HTTPException(status_code=400, detail="Evidence content does not match its declared file type.")
-            WORKER_EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
-            evidence_name = f"{request.intake_id}{extension}"
-            (WORKER_EVIDENCE_DIR / evidence_name).write_bytes(evidence_bytes)
+    # Prevent duplicate submissions.
+    existing_result = (
+        supabase
+        .table("worker_intakes")
+        .select("*")
+        .eq("intake_id", request.intake_id)
+        .limit(1)
+        .execute()
+    )
 
-        extraction = extract_skills(SkillExtractionRequest(text=request.declaration_text))
-        match_result = match_qualification_pack(request.declaration_text)
-        response = {
-            "intake_id": request.intake_id,
-            "worker_id": request.worker_id,
-            "worker_name": request.worker_name,
-            "channel": request.channel,
-            "language": request.language,
-            "declaration_text": request.declaration_text,
-            "skills": extraction["skills"],
-            "experience_years": extraction["experience_years"],
-            "preliminary_matches": match_result["matches"],
-            "matching_method": match_result["method"],
-            "matching_notice": match_result["notice"],
-            "evidence_photo": f"/workers/intake/{request.intake_id}/evidence" if evidence_name and extension in {".jpg", ".png", ".webp"} else None,
-            "evidence_media": f"/workers/intake/{request.intake_id}/evidence" if evidence_name else None,
-            "evidence_media_type": "video" if evidence_name and extension in {".mp4", ".webm", ".mov"} else "image" if evidence_name else None,
-            "latitude": request.latitude,
-            "longitude": request.longitude,
-            "captured_at_utc": request.captured_at_utc,
-            "saved_at_utc": datetime.now(timezone.utc).isoformat(),
+    if existing_result.data:
+        existing = existing_result.data[0]
+
+        return {
+            "intake_id": existing["intake_id"],
+            "worker_id": existing["worker_id"],
+            "worker_name": existing.get("worker_name") or "",
+            "channel": existing.get("channel") or "web",
+            "language": existing.get("language") or "en-IN",
+            "declaration_text": existing["declaration_text"],
+            "skills": [],
+            "experience_years": None,
+            "preliminary_matches": [],
+            "matching_method": "stored_record",
+            "matching_notice": "Existing worker intake returned from Supabase.",
+            "evidence_photo": None,
+            "evidence_media": None,
+            "evidence_media_type": None,
+            "latitude": existing.get("latitude"),
+            "longitude": existing.get("longitude"),
+            "captured_at_utc": existing.get("captured_at_utc"),
+            "saved_at_utc": existing.get("saved_at_utc"),
             "assessor_review_required": True,
             "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification.",
         }
-        intakes.append({"intake_id": request.intake_id, "response": response, "evidence_name": evidence_name})
-        with WORKER_INTAKES_PATH.open("w", encoding="utf-8") as intake_file:
-            json.dump(intakes, intake_file, ensure_ascii=False, indent=2)
+
+    # Keep the existing evidence validation/storage for now.
+    evidence_name = None
+    extension = None
+    evidence_data_url = (
+        request.evidence_media_data_url
+        or request.evidence_photo_data_url
+    )
+
+    if evidence_data_url:
+        header, separator, encoded = evidence_data_url.partition(",")
+
+        supported_headers = {
+            "data:image/jpeg;base64": ".jpg",
+            "data:image/png;base64": ".png",
+            "data:image/webp;base64": ".webp",
+            "data:video/mp4;base64": ".mp4",
+            "data:video/webm;base64": ".webm",
+            "data:video/quicktime;base64": ".mov",
+        }
+
+        if not separator or header not in supported_headers:
+            raise HTTPException(
+                status_code=400,
+                detail="Evidence must be a JPEG, PNG, WebP, MP4, WebM, or MOV data URL.",
+            )
+
+        maximum_encoded_size = (
+            11_200_000
+            if header.startswith("data:video/")
+            else 5_600_000
+        )
+
+        if len(encoded) > maximum_encoded_size:
+            raise HTTPException(
+                status_code=413,
+                detail="Photos must be smaller than 4 MB and videos smaller than 8 MB.",
+            )
+
+        try:
+            evidence_bytes = base64.b64decode(encoded, validate=True)
+        except (binascii.Error, ValueError) as error:
+            raise HTTPException(
+                status_code=400,
+                detail="Evidence data is invalid.",
+            ) from error
+
+        extension = supported_headers[header]
+
+        valid_signatures = {
+            ".jpg": evidence_bytes.startswith(b"\xff\xd8\xff"),
+            ".png": evidence_bytes.startswith(b"\x89PNG\r\n\x1a\n"),
+            ".webp": evidence_bytes.startswith(b"RIFF")
+            and evidence_bytes[8:12] == b"WEBP",
+            ".mp4": len(evidence_bytes) > 12
+            and evidence_bytes[4:8] == b"ftyp",
+            ".mov": len(evidence_bytes) > 12
+            and evidence_bytes[4:8] == b"ftyp",
+            ".webm": evidence_bytes.startswith(b"\x1a\x45\xdf\xa3"),
+        }
+
+        if not valid_signatures[extension]:
+            raise HTTPException(
+                status_code=400,
+                detail="Evidence content does not match its declared file type.",
+            )
+
+        WORKER_EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
+
+        evidence_name = f"{request.intake_id}{extension}"
+        (WORKER_EVIDENCE_DIR / evidence_name).write_bytes(evidence_bytes)
+
+    # Run the existing prototype analysis.
+    extraction = extract_skills(
+        SkillExtractionRequest(text=request.declaration_text)
+    )
+
+    match_result = match_qualification_pack(
+        request.declaration_text
+    )
+
+    saved_at = datetime.now(timezone.utc).isoformat()
+
+    response = {
+        "intake_id": request.intake_id,
+        "worker_id": request.worker_id,
+        "worker_name": request.worker_name,
+        "channel": request.channel,
+        "language": request.language,
+        "declaration_text": request.declaration_text,
+        "skills": extraction["skills"],
+        "experience_years": extraction["experience_years"],
+        "preliminary_matches": match_result["matches"],
+        "matching_method": match_result["method"],
+        "matching_notice": match_result["notice"],
+        "evidence_photo": (
+            f"/workers/intake/{request.intake_id}/evidence"
+            if evidence_name and extension in {".jpg", ".png", ".webp"}
+            else None
+        ),
+        "evidence_media": (
+            f"/workers/intake/{request.intake_id}/evidence"
+            if evidence_name
+            else None
+        ),
+        "evidence_media_type": (
+            "video"
+            if evidence_name and extension in {".mp4", ".webm", ".mov"}
+            else "image"
+            if evidence_name
+            else None
+        ),
+        "latitude": request.latitude,
+        "longitude": request.longitude,
+        "captured_at_utc": request.captured_at_utc,
+        "saved_at_utc": saved_at,
+        "assessor_review_required": True,
+        "notice": (
+            "Self-declaration saved for assessor review. "
+            "Skill matches are preliminary and do not establish "
+            "competence or certification."
+        ),
+    }
+
+    # Save the actual intake to Supabase.
+    supabase.table("worker_intakes").insert(
+        {
+            "intake_id": request.intake_id,
+            "worker_id": request.worker_id,
+            "worker_name": request.worker_name or None,
+            "channel": request.channel,
+            "language": request.language,
+            "declaration_text": request.declaration_text,
+            "evidence_media": (
+                response["evidence_media"]
+                or response["evidence_photo"]
+            ),
+            "latitude": request.latitude,
+            "longitude": request.longitude,
+            "captured_at_utc": request.captured_at_utc,
+            "saved_at_utc": saved_at,
+        }
+    ).execute()
+
     return response
-
-
-@app.get("/workers/intake")
-def list_worker_intakes() -> dict[str, object]:
-    """List locally stored demo intakes for assessor review."""
-    if not WORKER_INTAKES_PATH.exists():
-        return {"intake_count": 0, "intakes": []}
-    with WORKER_INTAKES_LOCK:
-        with WORKER_INTAKES_PATH.open(encoding="utf-8") as intake_file:
-            intakes = json.load(intake_file)
-    return {"intake_count": len(intakes), "intakes": [item["response"] for item in intakes]}
 
 
 @app.get("/workers/intake/{intake_id}/evidence")
 def get_worker_intake_evidence(intake_id: str) -> FileResponse:
-    """Return a captured demo image for assessor review."""
+    """Return captured evidence for assessor review."""
+
     if not WORKER_INTAKES_PATH.exists():
         raise HTTPException(status_code=404, detail="Evidence not found.")
+
     with WORKER_INTAKES_LOCK:
         with WORKER_INTAKES_PATH.open(encoding="utf-8") as intake_file:
             intakes = json.load(intake_file)
-    record = next((item for item in intakes if item["intake_id"] == intake_id), None)
-    evidence_name = record.get("evidence_name") if record else None
-    if not evidence_name:
-        raise HTTPException(status_code=404, detail="Evidence not found.")
-    evidence_path = (WORKER_EVIDENCE_DIR / evidence_name).resolve()
-    if evidence_path.parent != WORKER_EVIDENCE_DIR.resolve() or not evidence_path.is_file():
-        raise HTTPException(status_code=404, detail="Evidence not found.")
-    return FileResponse(evidence_path, media_type={".jpg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".mp4": "video/mp4", ".webm": "video/webm", ".mov": "video/quicktime"}.get(evidence_path.suffix.lower(), "application/octet-stream"))
 
+    record = next(
+        (item for item in intakes if item["intake_id"] == intake_id),
+        None,
+    )
+
+    evidence_name = record.get("evidence_name") if record else None
+
+    if not evidence_name:
+        raise HTTPException(
+            status_code=404,
+            detail="Evidence not found.",
+        )
+
+    evidence_path = (WORKER_EVIDENCE_DIR / evidence_name).resolve()
+
+    if (
+        evidence_path.parent != WORKER_EVIDENCE_DIR.resolve()
+        or not evidence_path.is_file()
+    ):
+        raise HTTPException(
+            status_code=404,
+            detail="Evidence not found.",
+        )
+
+    media_types = {
+        ".jpg": "image/jpeg",
+        ".png": "image/png",
+        ".webp": "image/webp",
+        ".mp4": "video/mp4",
+        ".webm": "video/webm",
+        ".mov": "video/quicktime",
+    }
+
+    return FileResponse(
+        evidence_path,
+        media_type=media_types.get(
+            evidence_path.suffix.lower(),
+            "application/octet-stream",
+        ),
+    )
 
 @app.get("/assessment/checklist")
 def get_assessment_checklist() -> dict[str, object]:
