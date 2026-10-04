@@ -17,11 +17,15 @@ from services.qp_matcher import match_qualification_pack, matcher_status
 from services.whatsapp import inbox_summary, process_webhook_payload, verify_signature, webhook_ready
 
 app = FastAPI(title="RPL Skill Assessment Prototype")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173", "http://127.0.0.1:5173",
-        "http://localhost:5174", "http://127.0.0.1:5174",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:5174",
+        "http://127.0.0.1:5174",
+        "https://innov8-rpl.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
