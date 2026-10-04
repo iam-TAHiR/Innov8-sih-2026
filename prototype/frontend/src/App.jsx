@@ -4,10 +4,10 @@ import CameraWatermark from './components/CameraWatermark'
 import { db, getPendingQueueCounts, queueAssessment, queueWorkerIntake, saveWorkerDraft, syncPendingRecords } from './db/indexedDb'
 import './App.css'
 
-const API_BASE = 'http://127.0.0.1:8000'
-const DRAFT_KEY = 'kaushalsetu-assessment-draft-v1'
-const REFERENCE_KEY = 'kaushalsetu-assessment-reference-v1'
-const ROLE_KEY = 'kaushalsetu-demo-role-v1'
+const API_BASE = 'https://innov8-sih-2026-714y.vercel.app'
+const DRAFT_KEY = 'innov8-assessment-draft-v1'
+const REFERENCE_KEY = 'innov8-assessment-reference-v1'
+const ROLE_KEY = 'innov8-demo-role-v1'
 const caseDraftKey = (workerId, mode) => `${DRAFT_KEY}:${workerId}:${mode}`
 function Innov8Mark() {
   return <span className="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 36" role="presentation"><path d="M4 18C9 8 14 8 20 18C26 28 31 28 36 18C31 8 26 8 20 18C14 28 9 28 4 18" /><path className="brand-spark" d="m21 11-5 8h4l-1 6 6-9h-4l1-5Z" /></svg></span>
