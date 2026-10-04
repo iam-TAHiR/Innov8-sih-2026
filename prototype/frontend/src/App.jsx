@@ -229,19 +229,40 @@ function App() {
   }
 
   useEffect(() => {
-    refreshQueueCounts()
-    const handleOnline = () => { void runQueueSync() }
-    window.addEventListener('online', handleOnline)
-    const retryTimer = window.setInterval(async () => {
-      const counts = await getPendingQueueCounts().catch(() => ({ intakes: 0, assessments: 0 }))
-      setQueueCounts(counts)
-      if (navigator.onLine && counts.intakes + counts.assessments > 0) void runQueueSync()
-    }, 20000)
-    return () => {
-      window.removeEventListener('online', handleOnline)
-      window.clearInterval(retryTimer)
+  // Immediately try to sync anything already waiting in IndexedDB.
+  if (navigator.onLine) {
+    void runQueueSync()
+  } else {
+    void refreshQueueCounts()
+  }
+
+  const handleOnline = () => {
+    void runQueueSync()
+  }
+
+  window.addEventListener('online', handleOnline)
+
+  const retryTimer = window.setInterval(async () => {
+    const counts = await getPendingQueueCounts().catch(() => ({
+      intakes: 0,
+      assessments: 0,
+    }))
+
+    setQueueCounts(counts)
+
+    if (
+      navigator.onLine &&
+      counts.intakes + counts.assessments > 0
+    ) {
+      void runQueueSync()
     }
-  }, [activeIntakeId, clientRecordId])
+  }, 20000)
+
+  return () => {
+    window.removeEventListener('online', handleOnline)
+    window.clearInterval(retryTimer)
+  }
+}, [activeIntakeId, clientRecordId])
 
   useEffect(() => {
     async function loadAssessment() {
