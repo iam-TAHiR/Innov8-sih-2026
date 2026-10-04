@@ -4,7 +4,7 @@ import CameraWatermark from './components/CameraWatermark'
 import { db, getPendingQueueCounts, queueAssessment, queueWorkerIntake, saveWorkerDraft, syncPendingRecords } from './db/indexedDb'
 import './App.css'
 
-const API_BASE = 'https://innov8-sih-2026-714y.vercel.app'
+const API_BASE = 'https://innov8-sih-2026-714y-d9dmji6gl-innov31.vercel.app'
 const DRAFT_KEY = 'innov8-assessment-draft-v1'
 const REFERENCE_KEY = 'innov8-assessment-reference-v1'
 const ROLE_KEY = 'innov8-demo-role-v1'
