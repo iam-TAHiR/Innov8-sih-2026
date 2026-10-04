@@ -249,12 +249,17 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
             "captured_at_utc": existing.get("captured_at_utc"),
             "saved_at_utc": existing.get("saved_at_utc"),
             "assessor_review_required": True,
-            "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification.",
+            "notice": (
+                "Self-declaration saved for assessor review. "
+                "Skill matches are preliminary and do not establish "
+                "competence or certification."
+            ),
         }
 
-    # Keep the existing evidence validation/storage for now.
+    # Keep the existing evidence validation/storage.
     evidence_name = None
     extension = None
+
     evidence_data_url = (
         request.evidence_media_data_url
         or request.evidence_photo_data_url
@@ -275,7 +280,10 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
         if not separator or header not in supported_headers:
             raise HTTPException(
                 status_code=400,
-                detail="Evidence must be a JPEG, PNG, WebP, MP4, WebM, or MOV data URL.",
+                detail=(
+                    "Evidence must be a JPEG, PNG, WebP, MP4, "
+                    "WebM, or MOV data URL."
+                ),
             )
 
         maximum_encoded_size = (
@@ -287,11 +295,17 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
         if len(encoded) > maximum_encoded_size:
             raise HTTPException(
                 status_code=413,
-                detail="Photos must be smaller than 4 MB and videos smaller than 8 MB.",
+                detail=(
+                    "Photos must be smaller than 4 MB "
+                    "and videos smaller than 8 MB."
+                ),
             )
 
         try:
-            evidence_bytes = base64.b64decode(encoded, validate=True)
+            evidence_bytes = base64.b64decode(
+                encoded,
+                validate=True,
+            )
         except (binascii.Error, ValueError) as error:
             raise HTTPException(
                 status_code=400,
@@ -302,30 +316,51 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
 
         valid_signatures = {
             ".jpg": evidence_bytes.startswith(b"\xff\xd8\xff"),
-            ".png": evidence_bytes.startswith(b"\x89PNG\r\n\x1a\n"),
-            ".webp": evidence_bytes.startswith(b"RIFF")
-            and evidence_bytes[8:12] == b"WEBP",
-            ".mp4": len(evidence_bytes) > 12
-            and evidence_bytes[4:8] == b"ftyp",
-            ".mov": len(evidence_bytes) > 12
-            and evidence_bytes[4:8] == b"ftyp",
-            ".webm": evidence_bytes.startswith(b"\x1a\x45\xdf\xa3"),
+            ".png": evidence_bytes.startswith(
+                b"\x89PNG\r\n\x1a\n"
+            ),
+            ".webp": (
+                evidence_bytes.startswith(b"RIFF")
+                and evidence_bytes[8:12] == b"WEBP"
+            ),
+            ".mp4": (
+                len(evidence_bytes) > 12
+                and evidence_bytes[4:8] == b"ftyp"
+            ),
+            ".mov": (
+                len(evidence_bytes) > 12
+                and evidence_bytes[4:8] == b"ftyp"
+            ),
+            ".webm": evidence_bytes.startswith(
+                b"\x1a\x45\xdf\xa3"
+            ),
         }
 
         if not valid_signatures[extension]:
             raise HTTPException(
                 status_code=400,
-                detail="Evidence content does not match its declared file type.",
+                detail=(
+                    "Evidence content does not match "
+                    "its declared file type."
+                ),
             )
 
-        WORKER_EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
+        WORKER_EVIDENCE_DIR.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
 
         evidence_name = f"{request.intake_id}{extension}"
-        (WORKER_EVIDENCE_DIR / evidence_name).write_bytes(evidence_bytes)
+
+        (
+            WORKER_EVIDENCE_DIR / evidence_name
+        ).write_bytes(evidence_bytes)
 
     # Run the existing prototype analysis.
     extraction = extract_skills(
-        SkillExtractionRequest(text=request.declaration_text)
+        SkillExtractionRequest(
+            text=request.declaration_text
+        )
     )
 
     match_result = match_qualification_pack(
@@ -348,7 +383,8 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
         "matching_notice": match_result["notice"],
         "evidence_photo": (
             f"/workers/intake/{request.intake_id}/evidence"
-            if evidence_name and extension in {".jpg", ".png", ".webp"}
+            if evidence_name
+            and extension in {".jpg", ".png", ".webp"}
             else None
         ),
         "evidence_media": (
@@ -358,7 +394,8 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
         ),
         "evidence_media_type": (
             "video"
-            if evidence_name and extension in {".mp4", ".webm", ".mov"}
+            if evidence_name
+            and extension in {".mp4", ".webm", ".mov"}
             else "image"
             if evidence_name
             else None
@@ -384,10 +421,14 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
             "channel": request.channel,
             "language": request.language,
             "declaration_text": request.declaration_text,
-            "evidence_media": (
+
+            # IMPORTANT:
+            # Your existing Supabase table uses this column name.
+            "evidence_media_data_url": (
                 response["evidence_media"]
                 or response["evidence_photo"]
             ),
+
             "latitude": request.latitude,
             "longitude": request.longitude,
             "captured_at_utc": request.captured_at_utc,
@@ -396,10 +437,12 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
     ).execute()
 
     return response
-    
+
+
 @app.get("/workers/intake")
 def list_worker_intakes() -> dict[str, object]:
     """List worker self-declarations for assessor review."""
+
     try:
         result = (
             supabase
@@ -420,23 +463,43 @@ def list_worker_intakes() -> dict[str, object]:
             detail=f"Could not load worker intakes: {error}",
         ) from error
 
+
 @app.get("/workers/intake/{intake_id}/evidence")
-def get_worker_intake_evidence(intake_id: str) -> FileResponse:
+def get_worker_intake_evidence(
+    intake_id: str,
+) -> FileResponse:
     """Return captured evidence for assessor review."""
 
     if not WORKER_INTAKES_PATH.exists():
-        raise HTTPException(status_code=404, detail="Evidence not found.")
+        raise HTTPException(
+            status_code=404,
+            detail="Evidence not found.",
+        )
 
-    with WORKER_INTAKES_LOCK:
-        with WORKER_INTAKES_PATH.open(encoding="utf-8") as intake_file:
-            intakes = json.load(intake_file)
+  result = (
+    supabase
+    .table("worker_intakes")
+    .select("evidence_media_data_url")
+    .eq("intake_id", intake_id)
+    .limit(1)
+    .execute()
+)
 
-    record = next(
-        (item for item in intakes if item["intake_id"] == intake_id),
-        None,
+if not result.data:
+    raise HTTPException(
+        status_code=404,
+        detail="Evidence not found.",
     )
 
-    evidence_name = record.get("evidence_name") if record else None
+evidence_data_url = result.data[0].get(
+    "evidence_media_data_url"
+)
+
+if not evidence_data_url:
+    raise HTTPException(
+        status_code=404,
+        detail="Evidence not found.",
+    )
 
     if not evidence_name:
         raise HTTPException(
@@ -444,10 +507,13 @@ def get_worker_intake_evidence(intake_id: str) -> FileResponse:
             detail="Evidence not found.",
         )
 
-    evidence_path = (WORKER_EVIDENCE_DIR / evidence_name).resolve()
+    evidence_path = (
+        WORKER_EVIDENCE_DIR / evidence_name
+    ).resolve()
 
     if (
-        evidence_path.parent != WORKER_EVIDENCE_DIR.resolve()
+        evidence_path.parent
+        != WORKER_EVIDENCE_DIR.resolve()
         or not evidence_path.is_file()
     ):
         raise HTTPException(
