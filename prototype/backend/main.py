@@ -396,7 +396,29 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
     ).execute()
 
     return response
+    
+@app.get("/workers/intake")
+def list_worker_intakes() -> dict[str, object]:
+    """List worker self-declarations for assessor review."""
+    try:
+        result = (
+            supabase
+            .table("worker_intakes")
+            .select("*")
+            .order("created_at", desc=True)
+            .execute()
+        )
 
+        return {
+            "intake_count": len(result.data or []),
+            "intakes": result.data or [],
+        }
+
+    except Exception as error:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Could not load worker intakes: {error}",
+        ) from error
 
 @app.get("/workers/intake/{intake_id}/evidence")
 def get_worker_intake_evidence(intake_id: str) -> FileResponse:
