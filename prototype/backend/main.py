@@ -2,6 +2,8 @@ import json
 import re
 import base64
 import binascii
+import os
+
 from pathlib import Path
 from threading import Lock
 from typing import Literal
@@ -13,10 +15,23 @@ from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from supabase import create_client, Client
+
 from services.qp_matcher import match_qualification_pack, matcher_status
 from services.whatsapp import inbox_summary, process_webhook_payload, verify_signature, webhook_ready
 
 app = FastAPI(title="RPL Skill Assessment Prototype")
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_SERVICE_ROLE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+
+if not SUPABASE_URL or not SUPABASE_SERVICE_ROLE_KEY:
+    raise RuntimeError("Supabase environment variables are not configured.")
+
+supabase: Client = create_client(
+    SUPABASE_URL,
+    SUPABASE_SERVICE_ROLE_KEY,
+)
 
 app.add_middleware(
     CORSMiddleware,
