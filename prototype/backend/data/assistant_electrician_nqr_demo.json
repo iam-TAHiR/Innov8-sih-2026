@@ -1,0 +1,38 @@
+{
+  "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+  "qualification_name": "Assistant Electrician (Domestic cum Industrial)",
+  "sector": "Power",
+  "nsqf_level": 3,
+  "approved_date": "2024-04-30",
+  "valid_till": "2027-04-30",
+  "source_url": "https://www.nqr.gov.in/qualifications/10741",
+  "qualification_file_url": "https://www.nqr.gov.in/qualification/file/Assistant%20Electrician%20(Domestic%20cum%20Industrial)_%20QF.pdf",
+  "mapping_type": "prototype_preliminary_keyword_map",
+  "notice": "Preliminary links to current NQR modules for assessor review. They do not confirm competence or make an official assessment or certification decision.",
+  "mandatory_modules": [
+    {"code": "MSME/DIE/01 & 1.0", "title": "Acquire the concepts of Basic Electrical"},
+    {"code": "MSME/DIE/02& 1.0", "title": "Measure Electrical Parameters (Voltage, Current, Power etc.)"},
+    {"code": "MSME/DIE/03& 1.0", "title": "Prepare for Domestic and Industrial Electrical Wiring"},
+    {"code": "MSME/DIE/04& 1.0", "title": "Perform Transformer Testing and Maintenance"},
+    {"code": "MSME/DIE/05& 1.0", "title": "Power Equipment Testing and Maintenance"},
+    {"code": "MSME/DIE/06& 1.0", "title": "Repair and Maintenance of Electrical Machines"},
+    {"code": "MSME/ES/01", "title": "Employability Skills"}
+  ],
+  "demo_skill_mappings": [
+    {
+      "skill": "house wiring",
+      "nos_codes": ["MSME/DIE/03& 1.0"],
+      "reason": "The NQR module covers preparation for domestic and industrial electrical wiring."
+    },
+    {
+      "skill": "MCB installation",
+      "nos_codes": ["MSME/DIE/03& 1.0"],
+      "reason": "Preliminary keyword link to the domestic and industrial electrical wiring module; assessor must review the detailed assessment criteria."
+    },
+    {
+      "skill": "ceiling fan repair",
+      "nos_codes": ["MSME/DIE/06& 1.0"],
+      "reason": "Preliminary keyword link to the electrical machines repair and maintenance module; assessor must review the detailed assessment criteria."
+    }
+  ]
+}

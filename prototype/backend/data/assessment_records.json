@@ -1,0 +1,2516 @@
+[
+  {
+    "record_id": "98c9dfbc-bea3-471a-81fa-8ba002d1e1bb",
+    "worker_id": "worker-003",
+    "assessor_name": "asseser 1",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 4,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 3
+    },
+    "synced_at": "2026-10-03T17:40:49.727035+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "c521dd8d-9482-41ce-914a-f2668e27e27e",
+    "worker_id": "worker-003",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 4,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 3
+    },
+    "synced_at": "2026-10-03T17:44:10.359980+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "57d5af96-be58-4fca-b098-37bd4964e0ff",
+    "worker_id": "worker-003",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 4,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 3
+    },
+    "synced_at": "2026-10-03T17:45:36.821594+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "254e41e5-79df-4fd0-b8d4-68b73b54ffc6",
+    "worker_id": "worker-003",
+    "assessor_name": "asseser 1",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 4,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 3
+    },
+    "synced_at": "2026-10-03T17:46:06.389229+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "ceec3d62-1e26-4cee-8642-1affcf4fe947",
+    "worker_id": "worker-004",
+    "assessor_name": "asseser 1",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 3,
+      "not_observed": 1
+    },
+    "synced_at": "2026-10-03T17:48:52.028912+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "c3680f75-6924-4540-99d1-4b525095348c",
+    "worker_id": "worker-004",
+    "assessor_name": "asseser 1",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 3,
+      "not_observed": 1
+    },
+    "synced_at": "2026-10-03T17:49:56.596132+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "f6464654-23a5-40a5-af0b-3721ea89e74e",
+    "worker_id": "worker-004",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 4,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 0,
+      "not_observed": 0
+    },
+    "synced_at": "2026-10-03T17:50:53.681655+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "f944bd9e-8d2b-48b0-9b73-3cc7ab4ba6d9",
+    "worker_id": "worker-004",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "request_additional_evidence",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 4,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 0,
+      "not_observed": 0
+    },
+    "synced_at": "2026-10-03T17:51:10.543789+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "a0c8aa30-c311-4d43-afc6-a29ee9892b79",
+    "worker_id": "worker-005",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 1,
+      "not_demonstrated": 1,
+      "not_observed": 5
+    },
+    "synced_at": "2026-10-03T17:53:22.797215+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "25516ea9-33d9-4303-8249-6f75a5bee4e7",
+    "worker_id": "worker-005",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 1,
+      "not_demonstrated": 1,
+      "not_observed": 5
+    },
+    "synced_at": "2026-10-03T17:56:19.686195+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "24f90592-dafe-4f36-b477-ecb3640d7dc3",
+    "worker_id": "worker-005",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": "havent done it or dont know"
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 2,
+      "not_observed": 22
+    },
+    "synced_at": "2026-10-03T18:09:15.342104+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "9f6bdf95-ff82-4e27-9325-a0465f08a585",
+    "worker_id": "worker-005",
+    "assessor_name": "asseser 2",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": "havent done it or dont know"
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": "not done"
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 2,
+      "not_observed": 22
+    },
+    "synced_at": "2026-10-03T18:11:12.700516+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "933e0d9c-3639-4fef-b1a0-5d0aae9f0792",
+    "client_record_id": "933e0d9c-3639-4fef-b1a0-5d0aae9f0792",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 14,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 10
+    },
+    "synced_at": "2026-10-04T05:26:46.684661+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "ae65ad37-c1fa-4287-a65e-24fb520de427",
+    "client_record_id": "ae65ad37-c1fa-4287-a65e-24fb520de427",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 14,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 10
+    },
+    "synced_at": "2026-10-04T05:41:11.805641+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "d1a8b52a-e5e4-446e-b33f-69e07c38fbc1",
+    "client_record_id": "d1a8b52a-e5e4-446e-b33f-69e07c38fbc1",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 14,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 0,
+      "not_observed": 10
+    },
+    "synced_at": "2026-10-04T05:42:05.466706+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "5a6c499b-8c92-4ed5-a965-f29c21ea2b69",
+    "client_record_id": "5a6c499b-8c92-4ed5-a965-f29c21ea2b69",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 11,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 0,
+      "not_observed": 10
+    },
+    "synced_at": "2026-10-04T07:05:36.554714+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "a7394c2f-77a2-46aa-9c0c-59104de3aedc",
+    "client_record_id": "a7394c2f-77a2-46aa-9c0c-59104de3aedc",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 0,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 1,
+      "not_observed": 23
+    },
+    "synced_at": "2026-10-04T07:19:12.971789+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "7b054cfa-817d-414a-a008-718ad89fc1de",
+    "client_record_id": "7b054cfa-817d-414a-a008-718ad89fc1de",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "manual_baseline",
+    "assessor_recommendation": "pending",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 3,
+      "partially_demonstrated": 0,
+      "not_demonstrated": 2,
+      "not_observed": 19
+    },
+    "synced_at": "2026-10-04T07:20:01.316855+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "ec9581d7-859d-4e2c-9a7c-0c70eb34d77b",
+    "client_record_id": "ec9581d7-859d-4e2c-9a7c-0c70eb34d77b",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 11,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 0,
+      "not_observed": 10
+    },
+    "synced_at": "2026-10-04T07:22:21.358078+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "40e44123-aa2d-4df9-bcd0-cec779f557e0",
+    "client_record_id": "40e44123-aa2d-4df9-bcd0-cec779f557e0",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 11,
+      "partially_demonstrated": 3,
+      "not_demonstrated": 0,
+      "not_observed": 10
+    },
+    "synced_at": "2026-10-04T07:24:00.200744+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "cc612c4d-21d8-483b-858e-45812319f7e9",
+    "client_record_id": "cc612c4d-21d8-483b-858e-45812319f7e9",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 11,
+      "partially_demonstrated": 4,
+      "not_demonstrated": 2,
+      "not_observed": 7
+    },
+    "applicable_criteria": 17,
+    "score_indicator_percent": 76,
+    "score_method": "demonstrated=2, partially_demonstrated=1, not_demonstrated=0; not_observed excluded",
+    "score_notice": "Prototype rating indicator only. It is not an official NSQF score, pass threshold, or certification decision.",
+    "synced_at": "2026-10-04T07:47:07.917638+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "1b2b1f13-0a97-4d57-a09c-0533a30e9a78",
+    "client_record_id": "1b2b1f13-0a97-4d57-a09c-0533a30e9a78",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "not_observed",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 11,
+      "partially_demonstrated": 4,
+      "not_demonstrated": 2,
+      "not_observed": 7
+    },
+    "applicable_criteria": 17,
+    "score_indicator_percent": 76,
+    "score_method": "demonstrated=2, partially_demonstrated=1, not_demonstrated=0; not_observed excluded",
+    "score_notice": "Prototype rating indicator only. It is not an official NSQF score, pass threshold, or certification decision.",
+    "synced_at": "2026-10-04T07:47:50.618396+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "1b67ed36-9f6e-409f-b615-c94b3e597427",
+    "client_record_id": "1b67ed36-9f6e-409f-b615-c94b3e597427",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 10,
+      "partially_demonstrated": 6,
+      "not_demonstrated": 3,
+      "not_observed": 5
+    },
+    "applicable_criteria": 19,
+    "score_indicator_percent": 68,
+    "score_method": "demonstrated=2, partially_demonstrated=1, not_demonstrated=0; not_observed excluded",
+    "score_notice": "Prototype rating indicator only. It is not an official NSQF score, pass threshold, or certification decision.",
+    "synced_at": "2026-10-04T10:28:44.771468+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  },
+  {
+    "record_id": "c7f49138-519b-475a-a578-08be57d00492",
+    "client_record_id": "c7f49138-519b-475a-a578-08be57d00492",
+    "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+    "assessor_name": "ramesh",
+    "assessment_mode": "tool_assisted",
+    "assessor_recommendation": "recommend_for_certification_review",
+    "qualification_code": "QG-03-PW-02422-2024-V1-MSME",
+    "ratings": [
+      {
+        "criterion_id": "MSME-DIE-01-PC1",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC1-PC3",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-02-PC7-PC11",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC1",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC7",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC13",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-03-PC14",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC1",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC2",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC3",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC4",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC5",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC6",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC7",
+        "rating": "demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC8",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC9",
+        "rating": "not_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC10",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC11",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC12",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC13",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC14",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC15",
+        "rating": "not_observed",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC16",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      },
+      {
+        "criterion_id": "MSME-DIE-04-PC17",
+        "rating": "partially_demonstrated",
+        "assessor_note": ""
+      }
+    ],
+    "rating_counts": {
+      "demonstrated": 10,
+      "partially_demonstrated": 6,
+      "not_demonstrated": 3,
+      "not_observed": 5
+    },
+    "applicable_criteria": 19,
+    "score_indicator_percent": 68,
+    "score_method": "demonstrated=2, partially_demonstrated=1, not_demonstrated=0; not_observed excluded",
+    "score_notice": "Prototype rating indicator only. It is not an official NSQF score, pass threshold, or certification decision.",
+    "synced_at": "2026-10-04T10:35:27.806507+00:00",
+    "assessor_decision_required": true,
+    "certification_decision": null
+  }
+]

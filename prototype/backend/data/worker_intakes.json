@@ -1,0 +1,438 @@
+[
+  {
+    "intake_id": "cf67a878-b3ed-4fef-a952-224809dd7ea1",
+    "response": {
+      "intake_id": "cf67a878-b3ed-4fef-a952-224809dd7ea1",
+      "worker_id": "worker-b6f02e10-a3ff-4f54-b5b8-bb461e0fc959",
+      "worker_name": "Demo Worker",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": "I have five years of experience with house wiring, MCB installation, and ceiling fan repair.",
+      "skills": [
+        "house wiring",
+        "MCB installation",
+        "ceiling fan repair"
+      ],
+      "experience_years": null,
+      "preliminary_matches": [
+        {
+          "code": "MSME/DIE/06& 1.0",
+          "title": "Repair and Maintenance of Electrical Machines",
+          "matched_skills": [
+            "ceiling fan repair"
+          ],
+          "similarity_score": 0.4491,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/05& 1.0",
+          "title": "Power Equipment Testing and Maintenance",
+          "matched_skills": [],
+          "similarity_score": 0.3754,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/03& 1.0",
+          "title": "Prepare for Domestic and Industrial Electrical Wiring",
+          "matched_skills": [
+            "house wiring",
+            "MCB installation"
+          ],
+          "similarity_score": 0.2785,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        }
+      ],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T05:14:26.545356+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "f4159a89-e3d4-4f6f-8e8b-33a92aac1954",
+    "response": {
+      "intake_id": "f4159a89-e3d4-4f6f-8e8b-33a92aac1954",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "Worker",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": "क्या आप मेरी बात सुन सकते हैं मैं एक एमसी वर्कर हूं और इलेक्ट्रीशियन हूं",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [
+        {
+          "code": "MSME/DIE/02& 1.0",
+          "title": "Measure Electrical Parameters (Voltage, Current, Power etc.)",
+          "matched_skills": [],
+          "similarity_score": 0.3123,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/ES/01",
+          "title": "Employability Skills",
+          "matched_skills": [],
+          "similarity_score": 0.2972,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/03& 1.0",
+          "title": "Prepare for Domestic and Industrial Electrical Wiring",
+          "matched_skills": [],
+          "similarity_score": 0.2839,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        }
+      ],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T05:23:45.912425+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "6208e837-16b7-4cc0-816a-b58c3de84e34",
+    "response": {
+      "intake_id": "6208e837-16b7-4cc0-816a-b58c3de84e34",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "tahir",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": "मैं एक मैं एक एमसीबी वर्क कर रहा हूं",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T07:00:00.408544+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "79171acb-7774-4a37-acc7-2f17732b19b7",
+    "response": {
+      "intake_id": "79171acb-7774-4a37-acc7-2f17732b19b7",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "tahir",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": "ನಾನು ಒಬ್ಬ ಎಂಸಿಬಿ ವರ್ಕರ್ माइक एमसी और इलेक्ट्रीशियन होम",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": "/workers/intake/79171acb-7774-4a37-acc7-2f17732b19b7/evidence",
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": "2026-10-04T07:02:01.781Z",
+      "saved_at_utc": "2026-10-04T07:04:33.931370+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": "79171acb-7774-4a37-acc7-2f17732b19b7.jpg"
+  },
+  {
+    "intake_id": "46287c15-11a9-46a7-8aa5-7d833670dd48",
+    "response": {
+      "intake_id": "46287c15-11a9-46a7-8aa5-7d833670dd48",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "tahir",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": "मैं एक एमसीबी इलेक्ट्रीशियन हूं",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [
+        {
+          "code": "MSME/DIE/02& 1.0",
+          "title": "Measure Electrical Parameters (Voltage, Current, Power etc.)",
+          "matched_skills": [],
+          "similarity_score": 0.3508,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/ES/01",
+          "title": "Employability Skills",
+          "matched_skills": [],
+          "similarity_score": 0.3494,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/05& 1.0",
+          "title": "Power Equipment Testing and Maintenance",
+          "matched_skills": [],
+          "similarity_score": 0.3253,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        }
+      ],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T07:21:28.773583+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "af13fe5d-1809-4727-a3f4-92614661fa9f",
+    "response": {
+      "intake_id": "af13fe5d-1809-4727-a3f4-92614661fa9f",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "rayan",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": " क्या तुम मेरी बात सुन रहे हो",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T07:23:26.988766+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "17d8acaa-3b55-4ee8-a244-c0475f9a7d53",
+    "response": {
+      "intake_id": "17d8acaa-3b55-4ee8-a244-c0475f9a7d53",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "rayan",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": " क्या तुम मेरी बात सुन रहे हो",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "evidence_media": null,
+      "evidence_media_type": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T07:46:39.595938+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "5907e66a-f597-4a9e-bfce-272074e7b159",
+    "response": {
+      "intake_id": "5907e66a-f597-4a9e-bfce-272074e7b159",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "rayan",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": " क्या तुम मेरी बात सुन रहे हो",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "evidence_media": null,
+      "evidence_media_type": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T07:47:07.896129+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "985d06b9-9f5c-4571-9501-29951c21e30b",
+    "response": {
+      "intake_id": "985d06b9-9f5c-4571-9501-29951c21e30b",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "sa",
+      "channel": "web",
+      "language": "hi-IN",
+      "declaration_text": "आई एम फिटिंग स्विचस रिपेयरिंग फैंस और अदर वर्क",
+      "skills": [],
+      "experience_years": null,
+      "preliminary_matches": [
+        {
+          "code": "MSME/DIE/06& 1.0",
+          "title": "Repair and Maintenance of Electrical Machines",
+          "matched_skills": [],
+          "similarity_score": 0.3695,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/04& 1.0",
+          "title": "Perform Transformer Testing and Maintenance",
+          "matched_skills": [],
+          "similarity_score": 0.3173,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/05& 1.0",
+          "title": "Power Equipment Testing and Maintenance",
+          "matched_skills": [],
+          "similarity_score": 0.2318,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        }
+      ],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "evidence_media": null,
+      "evidence_media_type": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T10:30:08.483435+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  },
+  {
+    "intake_id": "13f26373-cb59-4e54-8b3e-c18eff4d80f3",
+    "response": {
+      "intake_id": "13f26373-cb59-4e54-8b3e-c18eff4d80f3",
+      "worker_id": "worker-8c6f5a26-145d-46d5-9227-2f8104e415c7",
+      "worker_name": "prafful",
+      "channel": "web",
+      "language": "en-IN",
+      "declaration_text": "i am mcb wiring switches grounding ups panels fans and all other",
+      "skills": [
+        "house wiring",
+        "MCB installation",
+        "ceiling fan repair"
+      ],
+      "experience_years": null,
+      "preliminary_matches": [
+        {
+          "code": "MSME/DIE/06& 1.0",
+          "title": "Repair and Maintenance of Electrical Machines",
+          "matched_skills": [
+            "ceiling fan repair"
+          ],
+          "similarity_score": 0.477,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/05& 1.0",
+          "title": "Power Equipment Testing and Maintenance",
+          "matched_skills": [],
+          "similarity_score": 0.4536,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        },
+        {
+          "code": "MSME/DIE/03& 1.0",
+          "title": "Prepare for Domestic and Industrial Electrical Wiring",
+          "matched_skills": [
+            "house wiring",
+            "MCB installation"
+          ],
+          "similarity_score": 0.3603,
+          "match_reasons": [
+            {
+              "reason": "Semantic similarity to the worker's description and available NQR module criteria."
+            }
+          ]
+        }
+      ],
+      "matching_method": "sentence_transformers_cosine_similarity",
+      "matching_notice": "Embedding similarity is an uncalibrated retrieval score, not a probability or competence score. Only one qualification is configured in this prototype; an assessor must confirm relevance.",
+      "evidence_photo": null,
+      "evidence_media": null,
+      "evidence_media_type": null,
+      "latitude": null,
+      "longitude": null,
+      "captured_at_utc": null,
+      "saved_at_utc": "2026-10-04T10:34:38.488068+00:00",
+      "assessor_review_required": true,
+      "notice": "Self-declaration saved for assessor review. Skill matches are preliminary and do not establish competence or certification."
+    },
+    "evidence_name": null
+  }
+]

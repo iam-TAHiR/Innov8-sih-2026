@@ -1,0 +1,9 @@
+{
+  "name": "Innov8 RPL Assessment",
+  "short_name": "Innov8",
+  "description": "Offline-capable RPL assessor prototype",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f8f6",
+  "theme_color": "#176e58"
+}

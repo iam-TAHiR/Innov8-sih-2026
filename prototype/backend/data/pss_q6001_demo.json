@@ -1,0 +1,52 @@
+{
+  "qualification_pack_code": "PSS/Q6001",
+  "qualification_pack_name": "Electrician Domestic Solutions",
+  "sector": "Power",
+  "version": "1.0",
+  "source_url": "https://psscindia.org/WriteData/QnP/Jan17/Electrician_Domestic_SolutionsQP_NEW.pdf",
+  "mapping_type": "prototype_preliminary_keyword_map",
+  "notice": "These links help an assessor review a worker's self-declared experience. They are not an official assessment or certification decision.",
+  "compulsory_nos": [
+    {
+      "code": "PSS/N6001",
+      "title": "Types of House Wiring and Fault Repair in House Wiring"
+    },
+    {
+      "code": "PSS/N6002",
+      "title": "Mains, Distribution, Controls, Circuits and Protection in House Wiring"
+    },
+    {
+      "code": "PSS/N6003",
+      "title": "Maintenance and Repair of Household Electrical Gadgets"
+    },
+    {
+      "code": "PSS/N6005",
+      "title": "Develop Customer Relationship Skills"
+    },
+    {
+      "code": "PSS/N2001",
+      "title": "Use Basic Health and Safety Practices for Power Related Work"
+    },
+    {
+      "code": "PSS/N1336",
+      "title": "Work Effectively with Others"
+    }
+  ],
+  "demo_skill_mappings": [
+    {
+      "skill": "house wiring",
+      "nos_codes": ["PSS/N6001"],
+      "reason": "The NOS covers types of house wiring and fault repair in house wiring."
+    },
+    {
+      "skill": "MCB installation",
+      "nos_codes": ["PSS/N6001", "PSS/N6002"],
+      "reason": "The QP discusses MCB ratings and current-carrying capacity under PSS/N6001 and protection in house wiring under PSS/N6002."
+    },
+    {
+      "skill": "ceiling fan repair",
+      "nos_codes": ["PSS/N6003"],
+      "reason": "The PSS/N6003 scope includes maintenance and repair of ceiling and table fans."
+    }
+  ]
+}
