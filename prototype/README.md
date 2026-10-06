@@ -13,7 +13,7 @@ This self-contained Innov8 team demo implements a worker and assessor workflow f
 - A manual-baseline mode hides the extraction, module suggestions, and prompts so the same checklist can be rated without those aids.
 - Five fictional test cases and separate local drafts for each case and mode let a team collect matched comparison records without mixing case ratings.
 - The assessor records a human recommendation (pending, recommend for certification review, request more evidence, or not recommending yet). The prototype never awards a qualification, decides pass/fail, or replaces the authorized assessor.
-- Synced records are stored in a local JSON file. The consistency view reports exact agreement between different assessor names on the same case and shows assisted-versus-manual changes only when the same assessor pair has records in both modes.
+- Worker intakes are stored in Supabase. Assessor records are stored in a local JSON file. The consistency view reports exact agreement between different assessor names on the same case and shows assisted-versus-manual changes only when the same assessor pair has records in both modes.
 - The app shell, worker/checklist reference data, worker statement drafts, optional photo, and queued assessor ratings are available offline after the first online load. Extraction/matching and server sync require the backend; voice dictation can require a browser service connection.
 - Worker web intake is separate from assessor scoring. The demo has no real worker/assessor accounts, authentication, or secure role-based API permissions yet.
 - A Meta WhatsApp Cloud API webhook scaffold supports signed webhook verification, explicit chat consent, text intake, voice-note media download, and optional transcription using OpenAI when configured. It cannot receive messages until you configure Meta credentials and expose this API through a public HTTPS callback URL.
@@ -33,8 +33,12 @@ Open two PowerShell windows in the project folder.
 
 **Window 1 — API**
 
+The backend requires `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`. Set them before starting the API; for a separate Vercel backend project, use `prototype/backend` as its Root Directory and add both values to the project's Environment Variables. Keep the service-role key secret and never commit it.
+
 ```powershell
 cd "prototype\backend"
+$env:SUPABASE_URL = "https://<project-ref>.supabase.co"
+$env:SUPABASE_SERVICE_ROLE_KEY = "<service-role-key>"
 \.venv\Scripts\python.exe -m uvicorn main:app --reload --host 127.0.0.1 --port 8000
 ```
 
@@ -81,7 +85,7 @@ Open the Vite URL printed in the terminal, normally `http://localhost:5173/`. Ke
 - Worker names and profiles are fictional. Do not enter real personal, employment, or assessment data.
 - Skill extraction still uses hard-coded demo rules and recognizes a few English phrases (wiring, MCB, fan) and numeric year statements. Semantic module suggestions do not assess competence.
 - The role chooser is a local demo gate, not login or authorization; the API is not protected by role permissions. There is no production database, encryption, backup, full speech-to-text service, video/image skill evaluation, or real-time multi-user coordination. The WhatsApp webhook is only a scaffold until Meta credentials and a public HTTPS callback are configured; voice-note transcription additionally needs an OpenAI API key.
-- Browser drafts and queues live in IndexedDB. Synced demo records append to local JSON files (`backend/data/assessment_records.json` and `backend/data/worker_intakes.json`); keep these files if you need demo history. This is not a production store. Do not enter sensitive real-worker data.
+- Browser drafts and queues live in IndexedDB. Worker intakes are persisted in the Supabase `worker_intakes` table. Assessor records still append to `backend/data/assessment_records.json`, which is not durable on serverless deployments. Do not enter sensitive real-worker data.
 - The consistency calculations are exact agreement on common rated criteria; “not observed” is excluded. The latest record for each assessor/case/qualification/mode is used. The manual/assisted comparison requires the same two assessor names and same case in both modes, and compares only checklist criteria with usable ratings in both modes.
 - A small, unbalanced sample cannot substantiate improvement over manual scoring. Collect a planned test set, same-case paired ratings, and a suitable baseline before making that claim.
 - No official certification decision is produced. An authorized assessor and certification body retain responsibility for evidence, competency decisions, and certification.
