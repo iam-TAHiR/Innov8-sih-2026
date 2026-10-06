@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from itertools import combinations
 
 from fastapi import BackgroundTasks, FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, PlainTextResponse
+from fastapi.responses import PlainTextResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from supabase import create_client, Client
@@ -105,9 +105,6 @@ with CHECKLIST_PATH.open(encoding="utf-8") as checklist_file:
 
 ASSESSMENT_RECORDS_PATH = Path(__file__).parent / "data" / "assessment_records.json"
 ASSESSMENT_RECORDS_LOCK = Lock()
-WORKER_INTAKES_PATH = Path(__file__).parent / "data" / "worker_intakes.json"
-WORKER_INTAKES_LOCK = Lock()
-WORKER_EVIDENCE_DIR = Path(__file__).parent / "data" / "intake_evidence"
 
 
 @app.get("/health")
@@ -256,9 +253,8 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
             ),
         }
 
-    # Keep the existing evidence validation/storage.
-    evidence_name = None
-    extension = None
+    # Validate optional evidence before storing the intake.
+    evidence_extension = None
 
     evidence_data_url = (
         request.evidence_media_data_url
@@ -345,16 +341,7 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
                 ),
             )
 
-        WORKER_EVIDENCE_DIR.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
-
-        evidence_name = f"{request.intake_id}{extension}"
-
-        (
-            WORKER_EVIDENCE_DIR / evidence_name
-        ).write_bytes(evidence_bytes)
+        evidence_extension = extension
 
     # Run the existing prototype analysis.
     extraction = extract_skills(
@@ -383,21 +370,19 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
         "matching_notice": match_result["notice"],
         "evidence_photo": (
             f"/workers/intake/{request.intake_id}/evidence"
-            if evidence_name
-            and extension in {".jpg", ".png", ".webp"}
+            if evidence_extension in {".jpg", ".png", ".webp"}
             else None
         ),
         "evidence_media": (
             f"/workers/intake/{request.intake_id}/evidence"
-            if evidence_name
+            if evidence_extension
             else None
         ),
         "evidence_media_type": (
             "video"
-            if evidence_name
-            and extension in {".mp4", ".webm", ".mov"}
+            if evidence_extension in {".mp4", ".webm", ".mov"}
             else "image"
-            if evidence_name
+            if evidence_extension
             else None
         ),
         "latitude": request.latitude,
@@ -422,12 +407,7 @@ def save_worker_intake(request: WorkerIntakeRequest) -> dict[str, object]:
             "language": request.language,
             "declaration_text": request.declaration_text,
 
-            # IMPORTANT:
-            # Your existing Supabase table uses this column name.
-            "evidence_media_data_url": (
-                response["evidence_media"]
-                or response["evidence_photo"]
-            ),
+            "evidence_media_data_url": evidence_data_url,
 
             "latitude": request.latitude,
             "longitude": request.longitude,
@@ -467,75 +447,55 @@ def list_worker_intakes() -> dict[str, object]:
 @app.get("/workers/intake/{intake_id}/evidence")
 def get_worker_intake_evidence(
     intake_id: str,
-) -> FileResponse:
+) -> Response:
     """Return captured evidence for assessor review."""
 
-    if not WORKER_INTAKES_PATH.exists():
-        raise HTTPException(
-            status_code=404,
-            detail="Evidence not found.",
-        )
-
-  result = (
-    supabase
-    .table("worker_intakes")
-    .select("evidence_media_data_url")
-    .eq("intake_id", intake_id)
-    .limit(1)
-    .execute()
-)
-
-if not result.data:
-    raise HTTPException(
-        status_code=404,
-        detail="Evidence not found.",
+    result = (
+        supabase
+        .table("worker_intakes")
+        .select("evidence_media_data_url")
+        .eq("intake_id", intake_id)
+        .limit(1)
+        .execute()
     )
 
-evidence_data_url = result.data[0].get(
-    "evidence_media_data_url"
-)
-
-if not evidence_data_url:
-    raise HTTPException(
-        status_code=404,
-        detail="Evidence not found.",
+    evidence_data_url = (
+        result.data[0].get("evidence_media_data_url")
+        if result.data
+        else None
     )
-
-    if not evidence_name:
+    if not evidence_data_url:
         raise HTTPException(
             status_code=404,
             detail="Evidence not found.",
         )
 
-    evidence_path = (
-        WORKER_EVIDENCE_DIR / evidence_name
-    ).resolve()
-
-    if (
-        evidence_path.parent
-        != WORKER_EVIDENCE_DIR.resolve()
-        or not evidence_path.is_file()
-    ):
-        raise HTTPException(
-            status_code=404,
-            detail="Evidence not found.",
-        )
-
+    header, separator, encoded = evidence_data_url.partition(",")
     media_types = {
-        ".jpg": "image/jpeg",
-        ".png": "image/png",
-        ".webp": "image/webp",
-        ".mp4": "video/mp4",
-        ".webm": "video/webm",
-        ".mov": "video/quicktime",
+        "data:image/jpeg;base64": "image/jpeg",
+        "data:image/png;base64": "image/png",
+        "data:image/webp;base64": "image/webp",
+        "data:video/mp4;base64": "video/mp4",
+        "data:video/webm;base64": "video/webm",
+        "data:video/quicktime;base64": "video/quicktime",
     }
+    if not separator or header not in media_types:
+        raise HTTPException(
+            status_code=500,
+            detail="Stored evidence data is invalid.",
+        )
 
-    return FileResponse(
-        evidence_path,
-        media_type=media_types.get(
-            evidence_path.suffix.lower(),
-            "application/octet-stream",
-        ),
+    try:
+        evidence_bytes = base64.b64decode(encoded, validate=True)
+    except (binascii.Error, ValueError) as error:
+        raise HTTPException(
+            status_code=500,
+            detail="Stored evidence data is invalid.",
+        ) from error
+
+    return Response(
+        content=evidence_bytes,
+        media_type=media_types[header],
     )
 
 @app.get("/assessment/checklist")
